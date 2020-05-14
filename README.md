@@ -1,5 +1,4 @@
-## 集成OpenSSL到cocoapods，支持xcode直接编译，断点调试方便开发
-https://github.com/FOUNDERROR/zsign
+另一个集成OpenSSL到cocoapods，支持xcode直接编译版本地址 https://github.com/FOUNDERROR/zsign
 
 # zsign
 Maybe is the most quickly codesign alternative for iOS12+ in the world, cross-platform ( Linux & macOS ), more features.  
