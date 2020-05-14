@@ -355,7 +355,7 @@ bool ZAppBundle::SignNode(JValue &jvNode)
 	if (!macho.Init(strExePath.c_str()))
 	{
 		ZLog::ErrorV(">>> Can't Parse BundleExecute File! %s\n", strExePath.c_str());
-		return false;
+		return true;
 	}
 
 	CreateFolderV("%s/_CodeSignature", strBaseFolder.c_str());
