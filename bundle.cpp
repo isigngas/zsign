@@ -532,6 +532,10 @@ bool ZAppBundle::SignFolder(ZSignAsset *pSignAsset, const string &strFolder, con
 				jvInfoPlist["CFBundleDisplayName"] = strDisplayName;
 				ZLog::PrintV(">>> BundleName: %s -> %s\n", strOldDispalyName.c_str(), strDisplayName.c_str());
 			}
+			// 删除支持设备限制
+			if(jvInfoPlist.has("UISupportedDevices")){
+				jvInfoPlist.remove("UISupportedDevices");
+			}
 
 			jvInfoPlist.writePListPath("%s/Info.plist", m_strAppFolder.c_str());
 		}
